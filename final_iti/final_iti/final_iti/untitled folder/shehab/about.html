@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental - About Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="../../untitled folder/final iti/css/style.css" />
+</head>
+  <body>
+<!-- Header -->
+  <header class="header" role="banner">
+    <div class="logo-container">
+      <i class="fa-solid fa-car"></i>
+      <div class="logo">Car Rental</div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="../../untitled folder/shehab/home.html">Home</a>
+      <a href="../../untitled folder/hanoura/project_iti/vehicles.html">Vehicles</a>
+      <a href="../../untitled folder/final iti/Html/code.html">Details</a>
+      <a href="../../untitled folder/shehab/about.html" class="active">About Us</a>
+      <a href="../../untitled folder/contact/contact.html">Contact Us</a>
+    </nav>
+    <div class="contact-info" aria-label="Contact">
+      <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+      <a class="phone-number" href="tel:+123456789">+123 456 6789</a>
+      <button class="btn-primary">Book Now</button>
+    </div>
+  </header>
+
+    <div id="header"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">About Us</h1>
+        <p class="page-subtitle">Learn more about our car rental service and commitment to excellence</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="about-content">
+        <div class="about-section">
+          <h2>Our Story</h2>
+          <p>Founded with a passion for providing exceptional car rental experiences, we've been serving customers with premium vehicles and outstanding service for over a decade. Our commitment to quality, reliability, and customer satisfaction has made us a trusted name in the car rental industry.</p>
+        </div>
+
+        <div class="about-section">
+          <h2>Our Mission</h2>
+          <p>To provide our customers with the highest quality vehicles, exceptional service, and competitive pricing, ensuring every journey is comfortable, safe, and memorable.</p>
+        </div>
+
+        <div class="about-section">
+          <h2>Why Choose Us?</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Safety First</h3>
+              <p>All our vehicles undergo rigorous safety inspections and maintenance checks</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Premium Quality</h3>
+              <p>We maintain a fleet of well-maintained, modern vehicles from top brands</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3>24/7 Support</h3>
+              <p>Our customer service team is available round the clock to assist you</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section">
+          <h2>Our Fleet</h2>
+          <p>We offer a diverse range of vehicles to meet every need:</p>
+          <ul class="fleet-list">
+            <li><strong>Economy Cars:</strong> Perfect for city driving and budget-conscious travelers</li>
+            <li><strong>Luxury Sedans:</strong> For business trips and special occasions</li>
+            <li><strong>SUVs & Crossovers:</strong> Ideal for family trips and outdoor adventures</li>
+            <li><strong>Premium Vehicles:</strong> High-end cars for those who demand the best</li>
+            <li><strong>Vans:</strong> Spacious options for group travel and cargo needs</li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h2>Contact Information</h2>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address:</strong><br>
+                123 Car Rental Street<br>
+                City, State 12345
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone:</strong><br>
+                +1 (123) 456-7890
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email:</strong><br>
+                info@carrental.com
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Hours:</strong><br>
+                Mon-Sun: 24/7
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+      // Function to load components
+      const loadComponent = (url, elementId) => {
+        fetch(url)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+            // If the header is loaded, run the highlight function
+            if (elementId === "header") {
+              highlightActiveLink();
+            }
+          });
+      };
+
+      // Load header and footer
+      loadComponent("components/header.html", "header");
+      loadComponent("components/footer.html", "footer");
+    </script>
+  <footer class="footer">
+  <div class="footer-info">
+    <div class="info-item">
+      <div class="icon-circle2"><i class="fa-solid fa-location-dot"></i></div>
+      <div><strong>Address</strong><p>123 Main St, City</p></div>
+    </div>
+    <div class="info-item">
+      <div class="icon-circle2"><i class="fa-solid fa-envelope"></i></div>
+      <div><strong>Email</strong><p><a class="footer-phone" href="mailto:info@example.com">info@example.com</a></p></div>
+    </div>
+    <div class="info-item">
+      <div class="icon-circle2"><i class="fa-solid fa-phone"></i></div>
+      <div><strong>Phone</strong><p><a class="footer-phone" href="tel:+123456789">+123 456 6789</a></p></div>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="logo-container2">
+        <i class="fa-solid fa-car"></i>
+        <div class="logo">Car Rental</div>
+      </div>
+      <p>Premium rentals with great support and easy booking.</p>
+
+      <div class="store-badges">
+        <a class="store-badge appstore" href="#" aria-label="Download on the App Store">
+          <i class="fa-brands fa-apple"></i>
+          <span class="small">Download on the</span>
+          <span class="big">App Store</span>
+        </a>
+        <a class="store-badge play" href="#" aria-label="Get it on Google Play">
+          <i class="fa-brands fa-google-play"></i>
+          <span class="small">GET IT ON</span>
+          <span class="big">Google Play</span>
+        </a>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="../hanoura/project_iti/vehicles.html">Vehicles</a></li>
+        <li><a href="../final iti/Html/code.html">Details</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="../contact/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2025 Car Rental. All rights reserved.</div>
+</footer>
+</body>
+</html> 

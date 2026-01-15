@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Rental — BMW Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../../../untitled folder/final iti/css/style.css" />
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="logo-container">
+      <i class="fa-solid fa-car"></i>
+      <div class="logo">Car Rental</div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a href="../../../untitled folder/shehab/home.html">Home</a>
+      <a href="../../../untitled folder/hanoura/project_iti/vehicles.html">Vehicles</a>
+      <a href="../../../untitled folder/final iti/Html/code.html" class="active">Details</a>
+      <a href="../../../untitled folder/shehab/about.html">About Us</a>
+      <a href="../../../untitled folder/contact/contact.html">Contact Us</a>
+    </nav>
+    <div class="contact-info" aria-label="Contact">
+      <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+      <P>Book Now</P>
+      <a class="phone-number" href="tel:+123456789">+123 456 6789</a>
+    </div>
+  </header>
+  <main id="main" class="hero" role="main">
+    <section class="hero-text" aria-labelledby="car-title">
+      <h1 id="car-title">BMW</h1>
+      <div class="price">
+        <h2>25$</h2><h6>/day</h6>
+      </div>
+
+      <div class="hero-media">
+        <img src="../images/bmw.jpg" alt="BMW sedan front three-quarter view">
+      </div>
+
+      <div class="car-photo" aria-label="Gallery">
+        <img src="../images/bmw.jpg" alt="BMW front view">
+        <img src="../images/bmw848.jpg" alt="BMW interior view">
+        <img src="../images/bmw849.jpg" alt="BMW rear view">
+      </div>
+    </section>
+    <section id="car-details" class="car-details" aria-labelledby="specs-title">
+      <h2 id="specs-title" class="section-title">Technical Specification</h2>
+
+      <div class="grid-container">
+        <article class="spec-card" title="Gear Box">
+          <div class="icon-wrapper">
+            <img src="../images/icons8-gearbox-24.png" alt="" class="spec-icon" />
+          </div>
+          <div class="spec-info">
+            <span class="spec-name">Gear Box</span>
+            <span class="spec-value">Automatic</span>
+          </div>
+        </article>
+
+        <article class="spec-card" title="Fuel">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-gas-pump" aria-hidden="true"></i>
+          </div>
+          <div class="spec-info">
+            <span class="spec-name">Fuel</span>
+            <span class="spec-value">Petrol</span>
+          </div>
+        </article>
+
+        <article class="spec-card" title="Doors">
+          <div class="icon-wrapper">
+            <img src="../images/door car.png" alt="" class="spec-icon" />
+          </div>
+          <div class="spec-info">
+            <span class="spec-name">Doors</span>
+            <span class="spec-value">4</span>
+          </div>
+        </article>
+
+        <article class="spec-card" title="Air Conditioner">
+          <div class="icon-wrapper">
+            <img src="../images/icons8-air-conditioner-24.png" alt="" class="spec-icon" />
+          </div>
+          <div class="spec-info">
+            <span class="spec-name">Air Conditioner</span>
+            <span class="spec-value">Yes</span>
+          </div>
+        </article>
+
+        <article class="spec-card" title="Seats">
+          <div class="icon-wrapper">
+            <img src="../images/icons8-sitting-on-chair-24.png" alt="" class="spec-icon" />
+          </div>
+          <div class="spec-info">
+            <span class="spec-name">Seats</span>
+            <span class="spec-value">5</span>
+          </div>
+        </article>
+
+        <article class="spec-card" title="Distance">
+          <div class="icon-wrapper">
+            <img src="../images/icons8-distance-24.png" alt="" class="spec-icon" />
+          </div>
+          <div class="spec-info">
+            <span class="spec-name">Distance</span>
+            <span class="spec-value">800</span>
+          </div>
+        </article>
+      </div>
+      <button class="btn-primary" aria-label="Rent this car">Rent a car</button>
+      <div class="car-equipment">
+        <h2 class="section-title">Car Equipment</h2>
+        <ul class="equipment-list" role="list" aria-label="Car Equipment List">
+          <li><span class="checkbox-custom checked" aria-hidden="true"></span><span>A/C</span></li>
+          <li><span class="checkbox-custom checked" aria-hidden="true"></span><span>ABS</span></li>
+          <li><span class="checkbox-custom checked" aria-hidden="true"></span><span>Air Bags</span></li>
+          <li><span class="checkbox-custom checked" aria-hidden="true"></span><span>Air Conditioner</span></li>
+          <li><span class="checkbox-custom checked" aria-hidden="true"></span><span>Air Bags</span></li>
+          <li><span class="checkbox-custom checked" aria-hidden="true"></span><span>Cruise Control</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <section class="other-cars" aria-labelledby="other-cars-title">
+    <div class="other-cars-header">
+      <h3 id="other-cars-title">Other cars</h3>
+      <a href="#">View All ➔</a>
+    </div>
+
+    <div class="car-list">
+      <article class="car-card">
+        <img src="../images/this photo.jpg" alt="Mercedes sedan">
+        <div class="car-card-head">
+          <div>
+            <h4>Mercedes</h4>
+            <h5>Sedan</h5>
+          </div>
+          <div class="price-badge">
+            <span>$250</span><small>per day</small>
+          </div>
+        </div>
+        <div class="car-card-meta">
+          <small><img src="../images/icons8-gearbox-24.png" alt="">Automatic</small>
+          <small><i class="fa-solid fa-gas-pump"></i> PB95</small>
+          <small><img src="../images/icons8-air-conditioner-24.png" alt="">Air Conditioner</small>
+        </div>
+        <button class="btn">View Details</button>
+      </article>
+
+      <article class="car-card">
+        <img src="../images/sport.jpg" alt="Mercedes sport">
+        <div class="car-card-head">
+          <div>
+            <h4>Mercedes</h4>
+            <h5>Sport</h5>
+          </div>
+          <div class="price-badge">
+            <span>$500</span><small>per day</small>
+          </div>
+        </div>
+        <div class="car-card-meta">
+          <small><img src="../images/icons8-gearbox-24.png" alt="">Automatic</small>
+          <small><i class="fa-solid fa-gas-pump"></i> PB95</small>
+          <small><img src="../images/icons8-air-conditioner-24.png" alt="">Air Conditioner</small>
+        </div>
+        <button class="btn">View Details</button>
+      </article>
+
+      <article class="car-card">
+        <img src="../images/images.jpeg" alt="Mercedes sedan">
+        <div class="car-card-head">
+          <div>
+            <h4>Mercedes</h4>
+            <h5>Sedan</h5>
+          </div>
+          <div class="price-badge">
+            <span>$550</span><small>per day</small>
+          </div>
+        </div>
+        <div class="car-card-meta">
+          <small><img src="../images/icons8-gearbox-24.png" alt="">Automatic</small>
+          <small><i class="fa-solid fa-gas-pump"></i> PB95</small>
+          <small><img src="../images/icons8-air-conditioner-24.png" alt="">Air Conditioner</small>
+        </div>
+        <button class="btn">View Details</button>
+      </article>
+
+      <article class="car-card">
+        <img src="../images/porsche.jpg" alt="Porsche sedan">
+        <div class="car-card-head">
+          <div>
+            <h4>Porsche</h4>
+            <h5>Sedan</h5>
+          </div>
+          <div class="price-badge">
+            <span>$600</span><small>per day</small>
+          </div>
+        </div>
+        <div class="car-card-meta">
+          <small><img src="../images/icons8-gearbox-24.png" alt="">Automatic</small>
+          <small><i class="fa-solid fa-gas-pump"></i> PB95</small>
+          <small><img src="../images/icons8-air-conditioner-24.png" alt="">Air Conditioner</small>
+        </div>
+        <button class="btn">View Details</button>
+      </article>
+
+      <article class="car-card">
+        <img src="../images/toyota.webp" alt="Toyota sedan">
+        <div class="car-card-head">
+          <div>
+            <h4>Toyota</h4>
+            <h5>Sedan</h5>
+          </div>
+          <div class="price-badge">
+            <span>$450</span><small>per day</small>
+          </div>
+        </div>
+        <div class="car-card-meta">
+          <small><img src="../images/icons8-gearbox-24.png" alt="">Automatic</small>
+          <small><i class="fa-solid fa-gas-pump"></i> PB95</small>
+          <small><img src="../images/icons8-air-conditioner-24.png" alt="">Air Conditioner</small>
+        </div>
+        <button class="btn">View Details</button>
+      </article>
+
+      <article class="car-card">
+        <img src="../images/porsche. suv.avif" alt="Porsche SUV">
+        <div class="car-card-head">
+          <div>
+            <h4>Porsche</h4>
+            <h5>SUV</h5>
+          </div>
+          <div class="price-badge">
+            <span>$500</span><small>per day</small>
+          </div>
+        </div>
+        <div class="car-card-meta">
+          <small><img src="../images/icons8-gearbox-24.png" alt="">Automatic</small>
+          <small><i class="fa-solid fa-gas-pump"></i> PB95</small>
+          <small><img src="../images/icons8-air-conditioner-24.png" alt="">Air Conditioner</small>
+        </div>
+        <button class="btn">View Details</button>
+      </article>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="footer-info">
+    <div class="info-item">
+      <div class="icon-circle2"><i class="fa-solid fa-location-dot"></i></div>
+      <div><strong>Address</strong><p>123 Main St, City</p></div>
+    </div>
+    <div class="info-item">
+      <div class="icon-circle2"><i class="fa-solid fa-envelope"></i></div>
+      <div><strong>Email</strong><p><a class="footer-phone" href="mailto:info@example.com">info@example.com</a></p></div>
+    </div>
+    <div class="info-item">
+      <div class="icon-circle2"><i class="fa-solid fa-phone"></i></div>
+      <div><strong>Phone</strong><p><a class="footer-phone" href="tel:+123456789">+123 456 6789</a></p></div>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="logo-container2">
+        <i class="fa-solid fa-car"></i>
+        <div class="logo">Car Rental</div>
+      </div>
+      <p>Premium rentals with great support and easy booking.</p>
+
+      <div class="store-badges">
+        <a class="store-badge appstore" href="#" aria-label="Download on the App Store">
+          <i class="fa-brands fa-apple"></i>
+          <span class="small">Download on the</span>
+          <span class="big">App Store</span>
+        </a>
+        <a class="store-badge play" href="#" aria-label="Get it on Google Play">
+          <i class="fa-brands fa-google-play"></i>
+          <span class="small">GET IT ON</span>
+          <span class="big">Google Play</span>
+        </a>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../../shehab/home.html">Home</a></li>
+        <li><a href="../../hanoura/project_iti/vehicles.html">Vehicles</a></li>
+        <li><a href="code.html">Details</a></li>
+        <li><a href="../../shehab/about.html">About Us</a></li>
+        <li><a href="../../contact/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2025 Car Rental. All rights reserved.</div>
+</footer>
+
+  <script src="../java script/script.js"></script>
+</body>
+</html>
